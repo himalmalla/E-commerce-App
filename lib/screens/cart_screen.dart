@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 import '../widgets/card_item_samples.dart';
@@ -67,7 +65,7 @@ class CartScreen extends StatelessWidget {
                                   fontSize: 16, fontWeight: FontWeight.w500),
                             ),
                             Checkbox(
-                              activeColor: const Color(0xFFFd725A),
+                                activeColor: const Color(0xFFFd725A),
                                 value: true,
                                 onChanged: (value) {})
                           ],
@@ -76,13 +74,15 @@ class CartScreen extends StatelessWidget {
                       const SizedBox(
                         height: 15,
                       ),
-                      const Padding(padding: EdgeInsets.symmetric(horizontal: 20),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
                               "Total Payment",
-                              style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600, fontSize: 20),
                             ),
                             Text(
                               "\$450",
@@ -94,31 +94,34 @@ class CartScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Padding(padding: EdgeInsets.symmetric(horizontal: 20),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "Delivery Cost",
-                            style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
-                          ),
-                          Text(
-                            "\$50",
-                            style: TextStyle(
-                                color: Color(0xFFFD725A),
-                                fontSize: 20,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ],
-                      ),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Delivery Cost",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600, fontSize: 20),
+                            ),
+                            Text(
+                              "\$50",
+                              style: TextStyle(
+                                  color: Color(0xFFFD725A),
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w600),
+                            ),
+                          ],
+                        ),
                       ),
                       const SizedBox(
-                        height:30 ,
+                        height: 30,
                       ),
                       InkWell(
-                        onTap: (){},
+                        onTap: () {},
                         child: Container(
-                          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 130),
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 20, horizontal: 130),
                           decoration: BoxDecoration(
                               color: const Color(0xFFFD725A),
                               borderRadius: BorderRadius.circular(30)),

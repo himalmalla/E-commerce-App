@@ -10,7 +10,7 @@ class CustomBottomSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(left: 20, right: 20, bottom: 50),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(30),
@@ -160,10 +160,12 @@ class CustomBottomSheet extends StatelessWidget {
           ),
           InkWell(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => const CartScreen()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const CartScreen()));
             },
             child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 100),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 20, horizontal: 100),
               decoration: BoxDecoration(
                   color: const Color(0xFFFD725A),
                   borderRadius: BorderRadius.circular(30)),

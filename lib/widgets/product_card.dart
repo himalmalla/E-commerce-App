@@ -18,7 +18,10 @@ class ProductCard extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => ProductScreen(img)));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProductScreen(img)));
                   },
                   child: Image.asset(
                     "images/${img}.png",
@@ -59,7 +62,11 @@ class ProductCard extends StatelessWidget {
               children: [
                 Text(
                   img,
-                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 17, color: Colors.black.withOpacity(0.7),),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 17,
+                    color: Colors.black.withOpacity(0.7),
+                  ),
                 ),
                 const SizedBox(
                   height: 5,
